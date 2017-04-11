@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Yanir Kleiman - Computer Graphics Lab, Tel Aviv University</title>
+
+  <meta name="description" content="Yanir Kleiman - Computer Graphics Lab, Tel Aviv University" />
+  <meta name="keywords" content="computer graphics, tel aviv university, research, phd, vfx, compositing, animation, maya, nuke, fx, td, vfs, vancouver film school" />
+  <meta name="author" content="Yanir Kleiman" />
+
+  <link type="text/css" rel="stylesheet" href="style2.css" />
+
+  <script type="text/javascript" language="javascript" src="common.js"></script>
+</head>
+
+<body>
+
+  <!-- Always on top: Position Fixed-->
+  <header>
+    <div class="HeaderText">
+         <img class="Name" src="images/YanirKleiman.gif" /><img class="Tagline" src="images/CG_LAB_TAU3.gif" />
+    </div>
+    <div class="HeaderImage">
+         <img src="images/ThoughtBubbleSmall.gif" />
+    </div>
+  </header>
+
+  <!-- Fixed size after header-->
+  <main>
+    <!-- Always on top. Fixed position, fixed width, relative to content width-->
+    <!--
+    <div class="sidebar1">
+        sidebar-left
+    </div>
+    ==>
+
+    <!-- Scrollable div with main content -->
+    <div class="box">
+      <div class="scrollable" style="text-align: justify;">
+
+        <!-- Here be thy content... -->
+        <article>
+
+          <h2> SHED: Shape Edit Distance for Fine-grained Shape Similarity </h2>
+
+          <p class="authors">
+            Yanir Kleiman, Oliver van Kaick, Olga Sorkine-Hornung, Daniel Cohen-Or
+            <br />
+            SIGGRAPH ASIA 2015
+          </p>
+
+          <img src="images/SHEDTeaserDetails.png" class="teaser" />
+
+          <p class="caption">
+              Shape edit distance (SHED) is a similarity measure that estimates the amount of effort needed to transform one shape into the other,
+              in terms of rearranging the parts of one shape to match the parts of the other shape, as well as possibly adding and removing parts.
+          </p>
+
+          <nav>
+            <a href="Papers/SHED_SIGA2015_Kleiman.pdf">PDF</a>
+            <div class="Separator"></div>
+            <a href="Papers/SHED_SIGA2015_sup.pdf">Supplementary Material</a>
+            <div class="Separator"></div>
+            <a href="Code/SHED_Release.zip">Code</a>
+          </nav>
+
+
+          <h2> Abstract </h2>
+
+          <p class="abstract">
+              Computing similarities or distances between 3D shapes is a crucial building block for numerous tasks,
+              including shape retrieval, exploration and classification. Current state-of-the-art distance measures
+              mostly consider the overall appearance of the shapes and are less sensitive to fine changes in shape
+              structure or geometry. We present shape edit distance (SHED) that measures the amount of effort needed
+              to transform one shape into the other, in terms of rearranging the parts of one shape to match the parts
+              of the other shape, as well as possibly adding and removing parts. The shape edit distance takes into
+              account both the similarity of the overall shape structure and the similarity of individual parts of
+              the shapes. We show that SHED is favorable to state-of-the-art distance measures in a variety of
+              applications and datasets, and is especially successful in scenarios where detecting fine details
+              of the shapes is important, such as shape retrieval and exploration.
+          </p>
+
+          <h2> Enriched Datasets</h2>
+
+          <p>
+              These datasets are based on the <a href="http://irc.cs.sdu.edu.cn/~yunhai/public_html/ssl/ssd.htm">COSEG dataset</a>.
+              We enriched some of the datasets to generate more variations within each set.
+              Each collection includes the models in .off format, a segmentation of each shape generated using
+              <a href="http://www.cs.tau.ac.il/~noafish/wcseg/">Approximate Convexity Analysis</a>,
+              and a thumbnail image for each shape.
+          </p>
+
+          <nav>
+            <a href="Data/vases.zip">Vases</a>
+            <div class="Separator"></div>
+            <a href="Data/lamps.zip">Lamps</a>
+            <div class="Separator"></div>
+            <a href="Data/candles.zip">Candles</a>
+            <div class="Separator"></div>
+            <a href="Data/planes.zip">Planes</a>
+          </nav>
+          
+          <h2> How to use the code </h2>
+          
+          <p>
+                The code is well documented and self-explanatory.
+                Start by reading the file <strong>readme.m</strong>, which contains an introduction
+                and runs an example of test data included in the zip file.
+                To run the code on a different data set, create a list of the shapes to compare and run
+                <strong>ShedFromList</strong>.
+                The code also includes a method to render a nice looking figure that displays the matching
+                between the two shapes, <strong>RenderMatchingFigure</strong>.
+                If you use this code, please make sure you cite our paper.
+            </p>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Always on top. Fixed position, fixed width, relative to content width -->
+    <!--
+    <div class="sidebar2">
+        sidebar-right
+    </div>
+    -->
+  </main>
+
+
+  <!-- Always at the end of the page -->
+  <footer>
+
+    <a href="index.html">Publications</a>
+    <div class="Separator"></div>
+    <a href="code.html">Code & Data</a>
+    <div class="Separator"></div>
+    <a href="art.html">Art & Stuff</a>
+    <div class="Separator"></div>
+    <a href="resume.html">Resume & Contact</a>
+
+  </footer>
+
+<!-- Google Analytics Tracking Code -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9716104-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>

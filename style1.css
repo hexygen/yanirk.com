@@ -1,0 +1,315 @@
+
+body
+{
+    text-align: center;
+    color: white;
+    b-ackground-color: black;
+    background-color: #181a18;
+    background-image: url('images/BackgroundGreen2.gif');
+    background-position: top center;
+    background-repeat: no-repeat;
+    /* Next two lines to display the whole background in IE */
+    height: 100%;
+    overflow: auto;
+
+    font-family: Verdana;
+    font-style: normal;
+    font-size: 9pt;
+
+
+}
+
+/* Link colors: */
+a { text-decoration: none; border: 0; font-weight: bold; }
+a img { border: 0; }
+:link { color: #99cc99; }
+:visited { color: #99cc99; }
+a:active { color: #b2ffb2; }
+a:hover { color: #b2ffb2; }
+
+
+/* Whole page for future use if necessary */
+.Page
+{
+    width: 100%;
+    height: 670px;
+    overflow: visible;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Centered column where all the content is. */
+.Content
+{
+    width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+.Header
+{
+    height: 170px;
+}
+
+.HeaderText
+{
+    width: 370px;
+    float: left;
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 50px;
+    margin: 0;
+
+    b-order: solid blue 1px;
+}
+
+.HeaderText .Title
+{
+    font-size: 20pt;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.HeaderText .SubTitle
+{
+    font-size: 12pt;
+    margin-bottom: 8px;
+}
+
+.HeaderImage
+{
+    width: 230px;
+    float: right;
+    text-align: left;
+    padding-top: 10px;
+
+    b-order: solid red 1px;
+}
+
+img.Tagline
+{
+    margin-top: 35px;
+}
+
+.ContentBox
+{
+       width: 584px;
+       padding: 30px;
+       text-align: left;
+       border: solid white 8px;
+       line-height: 140%;
+}
+
+.MovieBox
+{
+    width: 640px;
+    height: 360px;
+    border: solid white 10px;
+}
+
+.MovieBox .Text
+{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    margin-right: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 35px;
+    padding-right: 10px;
+    height: 325px;
+    overflow: auto;
+    line-height: 160%;
+    color: #dddddd;
+
+
+    b-order: solid blue 1px;
+}
+
+.VerticalSeparator
+{
+    height: 10px;
+}
+
+H2
+{
+    font-size: 10pt;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+H3
+{
+    font-size: 9pt;
+    color: white;
+    font-weight: bold;
+    float: left;
+    margin-right: 30px;
+    vertical-align: top;
+    line-height: 160%;
+    
+    b-order: solid red 1px;
+}
+
+.MovieBox .Text .Column
+{
+    line-height: 160%;
+}
+
+.MovieBox .Text P
+{
+    margin-top: 15px;
+}
+
+
+.LinkBox
+{
+    width: 341px;
+    height: 44px;
+    margin: auto;
+    padding-top: 23px;
+    padding-left: 45px;
+    padding-right: 0px;
+    background-image: url('images/LinkBox.gif');
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.LinkBoxText
+{
+    width: 314px;
+    
+    b-order: solid red 1px;
+}
+
+.Popup
+{
+    position: relative;
+    top: -50px;
+    left: 490px;
+    width: 140px;
+    background-color: #181a18;
+    border: solid white 2px;
+    padding: 6px;
+    font-size: 8pt;
+    margin-bottom: -29px;
+    display: none;
+}
+
+.Footer
+{
+    padding: 0;
+    margin: auto;
+    margin-top: 10px;
+    width: 600px;
+
+b-order: solid green 1px;
+    
+}
+
+.Column
+{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 130px;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+        
+b-order: solid blue 1px;
+}
+
+.Footer .Column a
+{
+    border: 0;
+}
+
+.Footer .ImageHolder
+{
+    padding: 0;
+    margin: 0;
+    b-order: solid 1px red;
+}
+
+.Footer img
+{
+    padding: 0;
+    margin: 0;
+}
+
+.Footer img.Highlight
+{
+    visibility: hidden;
+    position: relative;
+    right: 0px;
+    top: -11px;
+}
+
+.Footer a:hover .Highlight
+{
+    visibility: visible;
+}
+
+.Footer .Separator
+{
+    width: 10px;
+    height: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 1px;
+    m-argin-bottom: 0px;
+    padding: 0px;
+    background-image: url('images/SeparatorTransparent.gif');
+    background-position: top center;
+    background-repeat: no-repeat;
+
+b-order: solid red 1px;
+}
+
+
+.Footer a
+{
+    color: white;
+    font-weight: normal;
+}
+
+.Footer a:hover
+{
+    color: #b2ffb2;
+}
+
+.Footer .Contact
+{
+    margin-top: 10px;
+}
+
+
+/* unused */
+
+div.Background
+{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: Black;
+    background-image: url('Background1.gif');
+    background-position: top center;
+    background-repeat: no-repeat;
+    text-align: center;
+    float: left;
+    z-index: -10;
+
+}
+
+
+/* Jo's styles */
+
+h1,h2 { font-family: Verdana, Arial, sans-serif; }
+pre { font-family: monospace; }
+

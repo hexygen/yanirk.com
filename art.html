@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>Yanir Kleiman - Computer Graphics Lab, Tel Aviv University</title>
+
+  <meta name="description" content="Yanir Kleiman - Computer Graphics Lab, Tel Aviv University" />
+  <meta name="keywords" content="computer graphics, tel aviv university, research, phd, vfx, compositing, animation, maya, nuke, fx, td, vfs, vancouver film school" />
+  <meta name="author" content="Yanir Kleiman" />
+
+  <link type="text/css" rel="stylesheet" href="style2.css" />
+
+  <script type="text/javascript" language="javascript" src="common.js"></script>
+  <script type="text/javascript" src="swfobject.js"></script>
+
+</head>
+
+<body onload="embed_player();">
+
+  <!-- Always on top: Position Fixed-->
+  <header>
+    <div class="HeaderText">
+         <img class="Name" src="images/YanirKleiman.gif" /><img class="Tagline" src="images/CG_LAB_TAU3.gif" />
+    </div>
+    <div class="HeaderImage">
+         <img src="images/ThoughtBubbleSmall.gif" />
+    </div>
+  </header>
+
+  <!-- Fixed size after header-->
+  <main>
+    <!-- Always on top. Fixed position, fixed width, relative to content width-->
+    <!--
+    <div class="sidebar1">
+        sidebar-left
+    </div>
+    ==>
+
+    <!-- Scrollable div with main content -->
+    <div class="box">
+      <div class="scrollable" style="text-align: justify;">
+
+        <!-- Here be thy content... -->
+        <article>
+
+          <h2 style="margin-top: 5px;"> Animation and Visual Effects Showreel </h2>
+
+          <p class="authors">
+            This is a showreel of my work as a visual effects artist (2009-2011).
+          </p>
+
+         <div class="MovieBox" id="divMovieBox">
+              <!-- This will be replaced by SWFObject if flash exists -->
+
+              <div id="divFlashVersion" style="vertical-align: middle; height: 100px; margin-top: 150px; visibility: hidden;">
+                  It seems you do not have the required flash version to play this movie.
+                  <br />
+                  <br />
+                  Please download the <a href="Videos/YanirKleiman_2011_720x405.mov">quicktime version</a>
+                  or <a href="http://www.adobe.com/go/getflashplayer">get the latest flash player</a>.
+              </div>
+
+
+         </div>
+
+            <p class="authors">
+                Download high resolution quicktime (right click to save):
+            </p>
+
+          <nav>
+             <a href="https://dl.dropboxusercontent.com/u/640943/Site/Videos/YanirKleiman_2011_HD720.mov">HD</a>
+            <div class="Separator"></div>
+             <a href="https://dl.dropboxusercontent.com/u/640943/Site/Videos/YanirKleiman_2011_720x405.mov">720x405</a>
+          </nav>
+
+        </article>
+
+        <div class="VerticalSeparatorLine"></div>
+
+        <atricle>
+
+            <h2> Dynamic Colors </h2>
+
+<!--
+          <p class="authors">
+            See description below the images.
+          </p>
+          <p class="authors">
+-->
+        <div style="text-align: center; width: 95%; margin-left: auto; margin-right: auto;">
+          <a href=".\art\DynamicColors\DynamicColorsBig_01.png"><img style="width: 32.5%; float: left;" src=".\art\DynamicColors\DynamicColorsBig_01.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_02.png"><img style="width: 32.5%;" src=".\art\DynamicColors\DynamicColorsBig_02.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_03.png"><img style="width: 32.5%; float: right;" src=".\art\DynamicColors\DynamicColorsBig_03.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_04.png"><img style="width: 32.5%; float: left;" src=".\art\DynamicColors\DynamicColorsBig_04.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_05.png"><img style="width: 32.5%;" src=".\art\DynamicColors\DynamicColorsBig_05.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_06.png"><img style="width: 32.5%; float: right;" src=".\art\DynamicColors\DynamicColorsBig_06.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_07.png"><img style="width: 32.5%; float: left;" src=".\art\DynamicColors\DynamicColorsBig_07.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_08.png"><img style="width: 32.5%;" src=".\art\DynamicColors\DynamicColorsBig_08.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_Long_01.png"><img style="width: 32.5%; float: right;" src=".\art\DynamicColors\DynamicColorsBig_Long_01.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_09.png"><img style="width: 32.5%; float: left;" src=".\art\DynamicColors\DynamicColorsBig_09.png" /></a>
+          <a href=".\art\DynamicColors\DynamicColorsBig_10.png"><img style="width: 32.5%;" src=".\art\DynamicColors\DynamicColorsBig_10.png" /></a>
+          </div>
+
+          <p style="margin-top: 35px;">
+            In <a href="Papers/DynamicMaps_SGP13.pdf"><strong>Dynamic Maps</strong></a>,
+            we generate a dynamic map of shapes or images on an endless 2D canvas, which maintains its continuity as the user moves around the map.
+            Here, I ran the algorithm to generate a very large map of colors, starting from a random seed color.
+            The map is not continuous due to the large number of colors displayed, yet the results are fascinating to look at, and could make a nice background image for your desktop or mobile :)
+            <br />
+            Click on each image to view or download the full size image.
+
+          </p>
+
+
+        </article>
+
+        <div class="VerticalSeparatorLine"></div>
+
+        <atricle>
+
+            <h2> Ray Tracing </h2>
+            
+            <p> 
+            I created a simple <a href="https://dl.dropboxusercontent.com/u/640943/Site/RayTracing.html">ray tracing exercise</a> for the Computer Graphics course at Tel Aviv University.
+            Below are images that were created with the ray tracer which I find interesting.
+            </p>
+
+                <img style="width: 32.5%;" src=".\CG\MirrorBalls_Inc.png" />
+                <img style="width: 32.5%;" src=".\CG\Pool.png" />
+                <img style="width: 32.5%;" src=".\CG\SciFi.png" />
+
+        </article>
+
+        <div class="VerticalSeparatorLine"></div>
+
+        <atricle>
+
+            <h2> Deep Dream </h2>
+
+            <p class="authors">
+                These are results of Google's <a href="http://googleresearch.blogspot.fr/2015/06/inceptionism-going-deeper-into-neural.html">Deep Dream</a> filters on a few of my photos.
+            </p>
+
+            <div style="text-align: center; width: 95%; margin-left: auto; margin-right: auto; text-align: center;">
+
+                <img style="width: 49%;" src=".\art\deep\Vases_01.jpeg" />
+                <img style="width: 49%;" src=".\art\deep\Vases_02.jpeg" />
+
+                <p style="text-align: center; margin-bottom: 20px;">
+                Deep Dream of vases rendered for <a href="http://shed.yanirk.com">SHED</a>.
+                </p>
+
+                <img style="width: 49%;" src=".\art\deep\DynamicColors_09.jpeg" />
+                <img style="width: 49%;" src=".\art\deep\DynamicColors_07.jpeg" />
+
+                <p style="text-align: center; margin-bottom: 20px;">
+                Deep Dream of Dynamic Colors (see above).
+                </p>
+
+                <img style="width: 100%;" src=".\art\deep\Kids.jpeg" />
+
+                <p style="text-align: center; margin-bottom: 20px;">
+                Deep Dream of my kids :)
+                </p>
+
+            </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- Always on top. Fixed position, fixed width, relative to content width -->
+    <!--
+    <div class="sidebar2">
+        sidebar-right
+    </div>
+    -->
+  </main>
+
+
+  <!-- Always at the end of the page -->
+  <footer>
+
+    <a href="index.html">Publications</a>
+    <div class="Separator"></div>
+    <a href="code.html">Code & Data</a>
+    <div class="Separator"></div>
+    Art & Stuff
+    <div class="Separator"></div>
+    <a href="resume.html">Resume & Contact</a>
+
+  </footer>
+
+
+<!-- Google Analytics Tracking Code -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9716104-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+</body>
+</html>
