@@ -308,3 +308,11 @@ footer .Contact
     right: 0;
 }
 */
+
+video {
+	display: block;
+	text-align: center;
+	height: 300px;
+	width: 500px;
+	margin: auto;
+}
