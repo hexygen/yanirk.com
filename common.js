@@ -13,22 +13,6 @@
        var popup = document.getElementById("divPopup");
        popup.style.display = "none";
     }
-    
-    function embed_player()
-    {
-        var s1 = new SWFObject('player.swf','player','720','405','5');
-        s1.addParam('allowfullscreen','true');
-        s1.addParam('allowscriptaccess','always');
-        s1.addParam('flashvars','&file=https://dl.dropboxusercontent.com/u/640943/Site/Videos/YanirKleiman_DemoReel_2011.flv&controlbar=over&icons=false&image=https://dl.dropboxusercontent.com/u/640943/Site/Videos/LastFrame.jpg&plugins=gapro-1&gapro.accountid=UA-9716104-1');
-        s1.write('divMovieBox');
-
-        // if there is no flash this code will show the "no flash" message:
-        var noFlash = document.getElementById("divFlashVersion");
-        if (noFlash != null)
-        {
-           noFlash.style.visibility = "visible";
-        }
-    }
 
     function GetViewportHeight()
     {
