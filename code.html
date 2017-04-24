@@ -39,15 +39,140 @@
     <div class="box">
       <div class="scrollable" style="text-align: justify;">
 
-        <atricle>
-            <h2 style="margin-top: 5px;"> This page is under construction... </h2>
+          <!-- Here be thy content... -->
 
-            <p class="authors"> The contents of this page will be uploaded soon. </p>
+        <atricle>
+            <h3>Code and Data</h3>
+
+            <p>
+                This is a collection of code and data from different projects I have worked on. Most of it is hosted on <a href="https://github.com/hexygen" target="_blank">GitHub</a>.
+            </p>
         </article>
 
         <div class="VerticalSeparatorLine"></div>
 
-        <!-- Here be thy content... -->
+        <atricle>
+            <h2>Segmented Shapes Dataset</h2>
+
+            <p>
+                This is a collection of segmented shapes that was used in the paper <em>SHED: Shape Edit Distance for Fine-grained Shape Similarity</em> (SIGGRAPH ASIA 2015).
+                The collection is based on some categories of the <a href="http://irc.cs.sdu.edu.cn/~yunhai/public_html/ssl/ssd.htm" target="_blank">COSEG dataset</a>.
+                We enriched these categories to generate more variations within each set.
+                We also provide a segmentation of each shape generated using
+                <a href="http://www.cs.tau.ac.il/~noafish/wcseg/" target="_blank">Approximate Convexity Analysis</a>.
+            </p>
+            <p>
+                There are four categories:
+                <ul>
+                    <li><a href="https://github.com/hexygen/seg_shapes/releases/download/v1.0.0/vases.zip" target="_blank">Vases</a> (80 shapes)</li>
+                    <li><a href="https://github.com/hexygen/seg_shapes/releases/download/v1.0.0/lamps.zip" target="_blank">Lamps</a> (100 shapes)</li>
+                    <li><a href="https://github.com/hexygen/seg_shapes/releases/download/v1.0.0/candles.zip" target="_blank">Candles</a> (42 shapes)</li>
+                    <li><a href="https://github.com/hexygen/seg_shapes/releases/download/v1.0.0/planes.zip" target="_blank">Planes</a> (70 shapes)</li>
+                </ul>
+            </p>
+            <p>
+                For each shape there is an <em>.off</em> file, a segmentation file <em>.seg</em>, and a thumbnail image.
+                The <em>.seg</em> file contains a list of segment ID for each vertex in the shape.
+                Download the entire collection <a href="https://github.com/hexygen/seg_shapes/releases" target="_blank">here</a>.
+            </p>
+        </article>
+
+        <div class="VerticalSeparatorLine"></div>
+
+        <atricle>
+            <h2>Shape Edit Distance</h2>
+
+            <p>
+                The <a href="https://github.com/hexygen/shed" target="_blank">code</a> of <em>SHED: Shape Edit Distance for Fine-grained Shape Similarity</em>
+                can be found in the link above or on the <a href="shed.html">project page</a>.
+            </p>
+        </article>
+
+        <div class="VerticalSeparatorLine"></div>
+
+        <atricle>
+
+            <h2> SPRender: <br /> Rendering for Shape Processing in Matlab </h2>
+
+          <p>
+              <a href="https://github.com/hexygen/SPRender" target="_blank">SPRender</a> package provides an easy tool for rendering 3D shapes directly from matlab.
+          </p>
+          <p>
+              In shape processing publications, it is often necessary to display function values, segmentation, or feature points over the 3D shape.
+              However, not all researchers have the knowledge or artistic skills to produce nice looking renders.
+              This package renders nice looking images and does not require any external dependencies or compiled mex files - so it is super easy to use.
+          </p>
+          <p>
+
+              The code for this package can be found <a href="https://github.com/hexygen/SPRender" target="_blank">here</a>.
+              The package supports the following types of renders and more (click to zoom):
+
+              <table class="inline">
+                  <tr>
+                      <td>
+                          <a href="images/SPRender/segments.png" target="_blank"><img src="images/SPRender/segments.png" width="100%" /></a>
+                          <br />
+                          A segmented shape.
+                      </td>
+                      <td>
+                          <a href="images/SPRender/segments_edges.png" target="_blank"><img src="images/SPRender/segments_edges.png" width="100%" /></a>
+                          <br />
+                          A shape with segment outlines.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <a href="images/SPRender/function.png" target="_blank"><img src="images/SPRender/function.png" width="100%" /></a>
+                          <br />
+                          A real-valued function over a shape.
+                      </td>
+                      <td>
+                          <a href="images/SPRender/function_segments.png" target="_blank"><img src="images/SPRender/function_segments.png" width="100%" /></a>
+                          <br />
+                          A function and segment outlines.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <a href="images/SPRender/pointcloud_function.png" target="_blank"><img src="images/SPRender/pointcloud_function.png" width="100%" /></a>
+                          <br />
+                          A function over a point cloud.
+                      </td>
+                      <td>
+                          <a href="images/SPRender/pointcloud_segments.png" target="_blank"><img src="images/SPRender/pointcloud_segments.png" width="100%" /></a>
+                          <br />
+                          A segmented point cloud.
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          <a href="images/SPRender/compare_edges.png" target="_blank"><img src="images/SPRender/compare_edges.png" width="100%" /></a>
+                          <br />
+                          Comparing two segmented shapes.
+                      </td>
+                      <td>
+                          <a href="images/SPRender/compare_pointclouds.png" target="_blank"><img src="images/SPRender/compare_pointclouds.png" width="100%" /></a>
+                          <br />
+                          Comparing two segmented point clouds.
+                      </td>
+                  </tr>
+              </table>
+          </p>
+
+        </article>
+
+        <div class="VerticalSeparatorLine"></div>
+
+        <atricle>
+            <h2>Ray Tracing Exercise</h2>
+
+            <p>
+                I created a simple <a href="http://www.cs.tau.ac.il/~yanirk/RayTracing.html" target="_blank">ray tracing</a> exercise for the Computer Graphics course at Tel Aviv University.
+                It is implemented in Java.
+                In the link you can find the instructions, skeleton files and examples of the desired output. If you are interested in the complete code, please contact me by email.
+            </p>
+        </article>
+
 <!--
         <article>
 
@@ -73,22 +198,6 @@
 
         </article>
 
-        <div class="VerticalSeparatorLine"></div>
-
-        <atricle>
-
-            <h2> Rendering in Matlab </h2>
-
-          <p>
-            This code renders an input mesh nicely inside Matlab.
-            The code is based on earlier code by <a href="http://people.scs.carleton.ca/~olivervankaick/">Oliver van-Kaick</a>.
-            <br />
-            <br />
-            A few examples of the rendered images appear below.
-          </p>
-
-
-        </article>
 -->
 
       </div>
