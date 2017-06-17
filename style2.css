@@ -486,3 +486,11 @@ video {
 	width: 720px;
 	margin: auto;
 }
+
+#ytplayer
+{
+	display: block;
+	text-align: center;
+	width: 720px;
+	margin: auto;
+}
