@@ -205,6 +205,9 @@ header {
     padding-top: 50px;
     padding-left: 100px;
     margin: 0;
+    font-family: 'bionic','Open Sans', Verdana, Tahoma;
+    font-size: 135%;
+    font-weight: normal;
 
     b-order: solid blue 1px;
 }
