@@ -347,6 +347,12 @@ ul {
     width: 450px;
 }
 
+ul.wide {
+    margin-left: 0px;
+    margin-top: 8px;
+    width: 650px;
+}
+
 img.teaser
 {
   width: 450px;
@@ -367,14 +373,14 @@ nav {
 }
 
 table.inline {
-    width: 600px;
+    width: 550px;
     margin-left: auto;
     margin-right: auto;
 }
 
 table.inline td {
     padding-right: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 .publications nav { text-align: left; }
