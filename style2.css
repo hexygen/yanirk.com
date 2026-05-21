@@ -318,6 +318,10 @@ h2:first {
   display: inline-block;
   vertical-align: middle;
 }
+
+venue {
+    color: #bbbbbb;
+}
 /*
 article .text
 {
@@ -333,8 +337,6 @@ article {
 p {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0px;
-  margin-bottom: 7px;
   width: 450px;
   text-align: justify;
 }
