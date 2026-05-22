@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yanir Kleiman - Art &amp; Stuff</title>
+
+  <meta name="description" content="Yanir Kleiman - Computer Graphics R&D" />
+  <meta name="keywords" content="computer graphics, ecole polytechnique, tel aviv university, research, phd, vfx, compositing, animation, maya, nuke, fx, td, vfs, vancouver film school, double negative, dneg" />
+  <meta name="author" content="Yanir Kleiman" />
+
+  <link rel="stylesheet" href="style_new.css" />
+</head>
+
+<body>
+
+  <div class="bg-squares" aria-hidden="true"></div>
+
+  <div class="frame">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-figure" aria-hidden="true">
+          <span class="bf face"></span>
+          <span class="bf eye-l"></span>
+          <span class="bf eye-r"></span>
+          <span class="bf hand hand-l"></span>
+          <span class="bf hand hand-r"></span>
+          <span class="bf foot foot-l"></span>
+          <span class="bf foot foot-r"></span>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-name">Yanir Kleiman</h1>
+          <p class="brand-tag">ML &amp; Computer Graphics</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Publications</a></li>
+          <li><a href="code_data.html">Code &amp; Data</a></li>
+          <li><a href="stuff.html" aria-current="page">Art &amp; Stuff</a></li>
+          <li><a href="contact.html">Resume &amp; Contact</a></li>
+        </ul>
+      </nav>
+
+    </aside>
+
+    <main class="content">
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>A VFX Shot</h2>
+          <span class="count">// complete showreel below</span>
+        </header>
+        <iframe id="ytplayer" type="text/html"
+          src="https://www.youtube.com/embed/ajP8ErvczmI?showinfo=0&autoplay=1&controls=0&loop=1&origin=http://www.yanirk.com&rel=0&playlist=ajP8ErvczmI&modestbranding=1"
+          frameborder="0" allow="autoplay"></iframe>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Animation and Visual Effects Showreel</h2>
+        </header>
+        <p>This is a showreel of my work as a visual effects artist (2009-2011).</p>
+        <video src="Videos/YanirKleiman_2011_HD720.mp4" preload controls></video>
+        <p>Download high resolution quicktime (right click to save):</p>
+        <nav>
+          <a href="https://dl.dropboxusercontent.com/u/640943/Site/Videos/YanirKleiman_2011_HD720.mov" target="_blank" rel="noopener">HD</a>
+          <div class="Separator"></div>
+          <a href="https://dl.dropboxusercontent.com/u/640943/Site/Videos/YanirKleiman_2011_720x405.mov" target="_blank" rel="noopener">720x405</a>
+        </nav>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Dynamic Colors</h2>
+        </header>
+        <div class="image-grid-3">
+          <a href="./art/DynamicColors/DynamicColorsBig_01.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_01.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_02.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_02.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_03.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_03.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_04.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_04.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_05.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_05.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_06.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_06.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_07.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_07.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_08.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_08.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_Long_01.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_Long_01.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_09.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_09.png" alt="" /></a>
+          <a href="./art/DynamicColors/DynamicColorsBig_10.png" target="_blank"><img src="./art/DynamicColors/DynamicColorsBig_10.png" alt="" /></a>
+        </div>
+        <p>
+          In <a href="Papers/DynamicMaps_SGP13.pdf"><strong>Dynamic Maps</strong></a>,
+          we generate a dynamic map of shapes or images on an endless 2D canvas, which maintains its continuity as the user moves around the map.
+          Here, I ran the algorithm to generate a very large map of colors, starting from a random seed color.
+          The map is not continuous due to the large number of colors displayed, yet the results are fascinating to look at, and could make a nice background image for your desktop or mobile :)
+        </p>
+        <p>Click on each image to view or download the full size image.</p>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Ray Tracing</h2>
+        </header>
+        <p>
+          I created a simple <a href="http://www.cs.tau.ac.il/~yanirk/RayTracing.html">ray tracing exercise</a> for the Computer Graphics course at Tel Aviv University.
+          Below are images that were created with the ray tracer which I find interesting.
+        </p>
+        <div class="image-grid-3">
+          <img src="./CG/MirrorBalls_Inc.png" alt="" />
+          <img src="./CG/Pool.png" alt="" />
+          <img src="./CG/SciFi.png" alt="" />
+        </div>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Deep Dream</h2>
+        </header>
+        <p>
+          These are results of Google's <a href="http://googleresearch.blogspot.fr/2015/06/inceptionism-going-deeper-into-neural.html" target="_blank" rel="noopener">Deep Dream</a> filters on a few of my photos.
+        </p>
+        <div class="image-grid-2">
+          <img src="./art/deep/Vases_01.jpeg" alt="" />
+          <img src="./art/deep/Vases_02.jpeg" alt="" />
+        </div>
+        <p class="image-caption">Deep Dream of vases rendered for <a href="shed.html">SHED</a>.</p>
+        <div class="image-grid-2">
+          <img src="./art/deep/DynamicColors_09.jpeg" alt="" />
+          <img src="./art/deep/DynamicColors_07.jpeg" alt="" />
+        </div>
+        <p class="image-caption">Deep Dream of Dynamic Colors (see above).</p>
+        <img src="./art/deep/Kids.jpeg" alt="" style="width: 100%; border: var(--bw) solid var(--border); margin-top: 8px;" />
+        <p class="image-caption">Deep Dream of my kids :)</p>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="animation_new.js"></script>
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-9716104-1");
+      pageTracker._trackPageview();
+    } catch (err) { }
+  </script>
+
+</body>
+</html>

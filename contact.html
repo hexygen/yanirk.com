@@ -1,102 +1,176 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-  <meta charset="UTF-8">
-  <title>Yanir Kleiman - Computer Graphics Lab, Tel Aviv University</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yanir Kleiman - Resume &amp; Contact</title>
 
-  <meta name="description" content="Yanir Kleiman - Computer Graphics Lab, Tel Aviv University" />
-  <meta name="keywords" content="computer graphics, tel aviv university, research, phd, vfx, compositing, animation, maya, nuke, fx, td, vfs, vancouver film school" />
+  <meta name="description" content="Yanir Kleiman - Computer Graphics R&D" />
+  <meta name="keywords" content="computer graphics, tel aviv university, research, phd, vfx, compositing, animation, maya, nuke, fx, td, vfs, vancouver film school, dneg" />
   <meta name="author" content="Yanir Kleiman" />
 
-  <link type="text/css" rel="stylesheet" href="style2.css" />
-
-  <script type="text/javascript" language="javascript" src="common.js"></script>
+  <link rel="stylesheet" href="style_new.css" />
 </head>
 
 <body>
 
-  <!-- Always on top: Position Fixed-->
-  <header>
-    <div class="HeaderText">
-         <img class="Name" src="images/YanirKleiman.gif" /><img class="Tagline" src="images/CG_LAB_TAU3.gif" />
-    </div>
-    <div class="HeaderImage">
-         <img src="images/ThoughtBubbleSmall.gif" />
-    </div>
-  </header>
+  <div class="bg-squares" aria-hidden="true"></div>
 
-  <!-- Fixed size after header-->
-  <main>
-    <!-- Always on top. Fixed position, fixed width, relative to content width-->
-    <!--
-    <div class="sidebar1">
-        sidebar-left
-    </div>
-    ==>
+  <div class="frame">
 
-    <!-- Scrollable div with main content -->
-    <div class="box">
-        <div class="scrollable">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-figure" aria-hidden="true">
+          <span class="bf face"></span>
+          <span class="bf eye-l"></span>
+          <span class="bf eye-r"></span>
+          <span class="bf hand hand-l"></span>
+          <span class="bf hand hand-r"></span>
+          <span class="bf foot foot-l"></span>
+          <span class="bf foot foot-r"></span>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-name">Yanir Kleiman</h1>
+          <p class="brand-tag">ML &amp; Computer Graphics</p>
+        </div>
+      </div>
 
-                        <p>
-                         I am a PhD candidate in the computer graphics lab in <a href="http://cs.tau.ac.il/" target="_blank">Tel Aviv University</a>.
-                         <br />
-                         My supervisor is <a href="http://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or</a>.
-                        </p>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-                        <p>
-                        I am currently a visitor of <a href="http://www.lix.polytechnique.fr/~maks/" target="_blank">Maks Ovsjanikov</a> at the &Eacute;cole Polytechnique.
-                        </p>
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Publications</a></li>
+          <li><a href="code_data.html">Code &amp; Data</a></li>
+          <li><a href="stuff.html">Art &amp; Stuff</a></li>
+          <li><a href="contact.html" aria-current="page">Resume &amp; Contact</a></li>
+        </ul>
+      </nav>
 
-                        <p>
-                        It is always best to contact me by email: <a href="mailto:yanirk@gmail.com" target="_blank">yanirk@gmail.com</a>.
-                        <br />
-                        I currently live in Paris, France, and can also be reached by the following phone number: +33 6 43 15 44 94.
-                        </p>
+    </aside>
 
+    <main class="content">
 
-                    </div>
+      <section class="content-section">
+        <p>
+          I am currently a senior research scientist at <a href="https://kyoso.com/" target="_blank" rel="noopener">Kyoso</a>,
+          previously at <a href="https://ai.meta.com/" target="_blank" rel="noopener">Meta&nbsp;AI</a> (FAIR / GenAI).
+        </p>
+        <p>
+          I completed my PhD at <a href="http://cs.tau.ac.il/" target="_blank" rel="noopener">Tel&nbsp;Aviv&nbsp;University</a>,
+          in the Computer Graphics lab led by <a href="http://www.cs.tau.ac.il/~dcor/" target="_blank" rel="noopener">Daniel&nbsp;Cohen-Or</a>,
+          followed by a post-doc position at <a href="https://www.lix.polytechnique.fr/" target="_blank" rel="noopener">Laboratoire d'Informatique de l'&Eacute;cole Polytechnique (LIX)</a>.
+        </p>
+        <p>
+          My research initially focused on shape analysis, segmentation, and shape matching.
+          In recent years I have been working on a blend of ML and computer graphics, including generative 3D modeling and texturing,
+          image and video generation, multi-modal post training of LLM/VLM, conversational agents, and specialized applications such as motion graphics and animation.
+        </p>
 
+        <p>Some of my latest projects include:</p>
+        <ul>
+          <li>Generation of animation tracks and keyframe information from text descriptions</li>
+          <li>Pre-training and post-training of Llama models</li>
+          <li>3D shape generation and texture generation</li>
+          <li>Generative modeling, procedural modeling, and procedural shading</li>
+          <li>Point cloud generation and clean up</li>
+          <li>Image denoising, reconstruction and classification in a VFX production environment</li>
+        </ul>
+      </section>
 
-               </div>
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Download CV</h2>
+        </header>
+        <nav>
+          <a href="Resume/Yanir Kleiman - CV.pdf" target="_blank" rel="noopener">PDF</a>
+          <div class="Separator"></div>
+          <a href="Resume/Yanir Kleiman - CV.html" target="_blank" rel="noopener">HTML</a>
+        </nav>
+      </section>
 
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Contact</h2>
+        </header>
+        <p>
+          It is always best to contact me by email: <a href="mailto:yanirk@gmail.com">yanirk@gmail.com</a>.
+        </p>
+        <p>
+          I currently live in London, and can also be reached by the following phone number: +44&nbsp;73&nbsp;053&nbsp;14271.
+        </p>
+      </section>
 
-    <!-- Always on top. Fixed position, fixed width, relative to content width -->
-    <!--
-    <div class="sidebar2">
-        sidebar-right
-    </div>
-    -->
-  </main>
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Resume Summary</h2>
+        </header>
+        <table class="inline">
+          <tr>
+            <td>2025 - now</td>
+            <td>Kyoso</td>
+            <td>Senior Research Scientist</td>
+          </tr>
+          <tr>
+            <td>2020 - 2025</td>
+            <td>Meta AI</td>
+            <td>Research Engineer</td>
+          </tr>
+          <tr>
+            <td>2019 - 2020</td>
+            <td>Shapes AI</td>
+            <td>Research Scientist</td>
+          </tr>
+          <tr>
+            <td>2018 - 2019</td>
+            <td>DNEG</td>
+            <td>Software Developer</td>
+          </tr>
+          <tr>
+            <td>2016 - 2017</td>
+            <td>&Eacute;cole Polytechnique</td>
+            <td>Post-doc Researcher</td>
+          </tr>
+          <tr>
+            <td>2011 - 2016</td>
+            <td>Tel&nbsp;Aviv University</td>
+            <td>PhD, Computer Science</td>
+          </tr>
+          <tr>
+            <td>2010</td>
+            <td>Crew 972</td>
+            <td>Lighting / Compositing / Effects</td>
+          </tr>
+          <tr>
+            <td>2008</td>
+            <td>MutualArt Inc.</td>
+            <td>Algorithms Developer</td>
+          </tr>
+          <tr>
+            <td>2005 - 2007</td>
+            <td>Amobee Media Systems</td>
+            <td>Development Team Leader</td>
+          </tr>
+        </table>
+      </section>
 
+    </main>
 
-  <!-- Always at the end of the page -->
-  <footer>
+  </div>
 
-    <a href="index.html">Publications</a>
-    <div class="Separator"></div>
-    <a href="code.html">Code & Data</a>
-    <div class="Separator"></div>
-    <a href="art.html">Art & Stuff</a>
-    <div class="Separator"></div>
-    Resume
-    <div class="Separator"></div>
-    <a href="contact.html">Contact</a>
+  <script src="animation_new.js"></script>
 
-  </footer>
-
-<!-- Google Analytics Tracking Code -->
-
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-var pageTracker = _gat._getTracker("UA-9716104-1");
-pageTracker._trackPageview();
-} catch(err) {}
-</script>
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-9716104-1");
+      pageTracker._trackPageview();
+    } catch (err) { }
+  </script>
 
 </body>
 </html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yanir Kleiman - Code &amp; Data</title>
+
+  <meta name="description" content="Yanir Kleiman - Computer Graphics R&D" />
+  <meta name="keywords" content="computer graphics, tel aviv university, research, phd, vfx, compositing, animation, maya, nuke, fx, td, vfs, vancouver film school" />
+  <meta name="author" content="Yanir Kleiman" />
+
+  <link rel="stylesheet" href="style_new.css" />
+</head>
+
+<body>
+
+  <div class="bg-squares" aria-hidden="true"></div>
+
+  <div class="frame">
+
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-figure" aria-hidden="true">
+          <span class="bf face"></span>
+          <span class="bf eye-l"></span>
+          <span class="bf eye-r"></span>
+          <span class="bf hand hand-l"></span>
+          <span class="bf hand hand-r"></span>
+          <span class="bf foot foot-l"></span>
+          <span class="bf foot foot-r"></span>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-name">Yanir Kleiman</h1>
+          <p class="brand-tag">ML &amp; Computer Graphics</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Publications</a></li>
+          <li><a href="code_data.html" aria-current="page">Code &amp; Data</a></li>
+          <li><a href="stuff.html">Art &amp; Stuff</a></li>
+          <li><a href="contact.html">Resume &amp; Contact</a></li>
+        </ul>
+      </nav>
+
+    </aside>
+
+    <main class="content">
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Code and Data</h2>
+        </header>
+        <p>
+          This is a collection of code and data from different projects I have worked on.
+          Most of it is hosted on <a href="https://github.com/hexygen" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Segmented Shapes Dataset</h2>
+        </header>
+        <p>
+          This is a collection of segmented shapes that was used in the paper <em>SHED: Shape Edit Distance for Fine-grained Shape Similarity</em> (SIGGRAPH ASIA 2015).
+          The collection is based on some categories of the <a href="http://irc.cs.sdu.edu.cn/~yunhai/public_html/ssl/ssd.htm" target="_blank" rel="noopener">COSEG dataset</a>.
+          We enriched these categories to generate more variations within each set.
+          We also provide a segmentation of each shape generated using
+          <a href="http://www.cs.tau.ac.il/~noafish/wcseg/" target="_blank" rel="noopener">Approximate Convexity Analysis</a>.
+        </p>
+        <p>There are four categories:</p>
+        <ul>
+          <li><a href="https://github.com/hexygen/seg_shapes/releases/download/v1.0.0/vases.zip" target="_blank" rel="noopener">Vases</a> (80 shapes)</li>
+          <li><a href="https://github.com/hexygen/seg_shapes/releases/download/v1.0.0/lamps.zip" target="_blank" rel="noopener">Lamps</a> (100 shapes)</li>
+          <li><a href="https://github.com/hexygen/seg_shapes/releases/download/v1.0.0/candles.zip" target="_blank" rel="noopener">Candles</a> (42 shapes)</li>
+          <li><a href="https://github.com/hexygen/seg_shapes/releases/download/v1.0.0/planes.zip" target="_blank" rel="noopener">Planes</a> (70 shapes)</li>
+        </ul>
+        <p>
+          For each shape there is an <em>.off</em> file, a segmentation file <em>.seg</em>, and a thumbnail image.
+          The <em>.seg</em> file contains a list of segment ID for each vertex in the shape.
+          Download the entire collection <a href="https://github.com/hexygen/seg_shapes/releases" target="_blank" rel="noopener">here</a>.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Shape Edit Distance</h2>
+        </header>
+        <p>
+          The <a href="https://github.com/hexygen/shed" target="_blank" rel="noopener">code</a> of <em>SHED: Shape Edit Distance for Fine-grained Shape Similarity</em>
+          can be found in the link above or on the <a href="shed.html">project page</a>.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Mesh Sampling</h2>
+        </header>
+        <p>
+          A small matlab package to create a point cloud from a given triangular mesh by uniformly sampling points over the faces.
+          The output contains both point locations and normal information (taken from the face the point is on).
+          <a href="https://github.com/hexygen/sample_mesh" target="_blank" rel="noopener">Download here</a>.
+        </p>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>SPRender: Rendering for Shape Processing in Matlab</h2>
+        </header>
+        <p>
+          <a href="https://github.com/hexygen/SPRender" target="_blank" rel="noopener">SPRender</a> package provides an easy tool for rendering 3D shapes directly from matlab.
+        </p>
+        <p>
+          In shape processing publications, it is often necessary to display function values, segmentation, or feature points over the 3D shape.
+          However, not all researchers have the knowledge or artistic skills to produce nice looking renders.
+          This package renders nice looking images and does not require any external dependencies or compiled mex files - so it is super easy to use.
+        </p>
+        <p>
+          The code for this package can be found <a href="https://github.com/hexygen/SPRender" target="_blank" rel="noopener">here</a>.
+          The package supports the following types of renders and more (click to zoom):
+        </p>
+        <table class="image-table">
+          <tr>
+            <td>
+              <a href="images/SPRender/segments.png" target="_blank" rel="noopener"><img src="images/SPRender/segments.png" alt="" /></a>
+              <small>A segmented shape.</small>
+            </td>
+            <td>
+              <a href="images/SPRender/segments_edges.png" target="_blank" rel="noopener"><img src="images/SPRender/segments_edges.png" alt="" /></a>
+              <small>A shape with segment outlines.</small>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="images/SPRender/function.png" target="_blank" rel="noopener"><img src="images/SPRender/function.png" alt="" /></a>
+              <small>A real-valued function over a shape.</small>
+            </td>
+            <td>
+              <a href="images/SPRender/function_segments.png" target="_blank" rel="noopener"><img src="images/SPRender/function_segments.png" alt="" /></a>
+              <small>A function and segment outlines.</small>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="images/SPRender/pointcloud_function.png" target="_blank" rel="noopener"><img src="images/SPRender/pointcloud_function.png" alt="" /></a>
+              <small>A function over a point cloud.</small>
+            </td>
+            <td>
+              <a href="images/SPRender/pointcloud_segments.png" target="_blank" rel="noopener"><img src="images/SPRender/pointcloud_segments.png" alt="" /></a>
+              <small>A segmented point cloud.</small>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="images/SPRender/compare_edges.png" target="_blank" rel="noopener"><img src="images/SPRender/compare_edges.png" alt="" /></a>
+              <small>Comparing two segmented shapes.</small>
+            </td>
+            <td>
+              <a href="images/SPRender/compare_pointclouds.png" target="_blank" rel="noopener"><img src="images/SPRender/compare_pointclouds.png" alt="" /></a>
+              <small>Comparing two segmented point clouds.</small>
+            </td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="content-section">
+        <header class="section-head">
+          <h2>Ray Tracing Exercise</h2>
+        </header>
+        <p>
+          I created a simple <a href="http://www.cs.tau.ac.il/~yanirk/RayTracing.html" target="_blank" rel="noopener">ray tracing</a> exercise for the Computer Graphics course at Tel Aviv University.
+          It is implemented in Java.
+          In the link you can find the instructions, skeleton files and examples of the desired output. If you are interested in the complete code, please contact me by email.
+        </p>
+      </section>
+
+    </main>
+
+  </div>
+
+  <script src="animation_new.js"></script>
+
+  <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+    try {
+      var pageTracker = _gat._getTracker("UA-9716104-1");
+      pageTracker._trackPageview();
+    } catch (err) { }
+  </script>
+
+</body>
+</html>
