@@ -333,6 +333,19 @@ strong { font-weight: 700; }
 .bio a { border-bottom: 1px solid var(--accent-trace); }
 .bio a:hover { border-bottom-color: var(--accent-bright); }
 
+/* The "bottom line" — first sentence of the bio. Larger, darker,
+   set apart by a phosphor-green underline. */
+.bio-lead {
+  font-size: 18px;
+  line-height: 1.45;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: -0.005em;
+  margin: 0 0 22px 0 !important;
+  padding-bottom: 18px;
+  border-bottom: 2px solid var(--accent-trace);
+}
+
 /* Section heading */
 .section-head {
   display: flex;
